@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Notes Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="exp3.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <h1>Campus Notes Hub</h1>
+            <p class="lead">Your one-stop solution for college notes</p>
+            <input type="text" id="searchBar" class="form-control w-50 mx-auto" placeholder="Search notes..." onkeyup="searchNotes()">
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Campus Notes Hub</a>
+            <a class="navbar-brand" href="#">About</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#year1">Year 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#year2">Year 2</a></li>
+                    <li class="nav-item note"><a class="nav-link" href="#year3">Year 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#year4">Year 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <header class="bg-primary text-white py-4"> -->
+        <!-- <div class="container"> 
+              Developer Name Section  
+            <div class="row">
+                <div class="col-md-6 text-start">
+                    <p class="mb-0">Developed by: <strong>Your Name</strong></p>
+                </div>
+                </div>-->
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Year 1 -->
+        <section id="year1" class="mb-5">
+            <h2 class="text-primary">Year 1</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Semester 1</h3>
+                    <ul class="list-group note-list">
+                        <li class="list-group-item"><a href="subject.html" class="note" download>Mathematics-1</a></li>
+                        <li class="list-group-item"><a href="notes/year1_sem1_subject2.pdf" class="note" download>Physics</a></li>
+                        <li class="list-group-item"><a href="subject.html" class="note" download>Introduction to Civil Engineering</a></li>
+                        <li class="list-group-item"><a href="subject.html" class="note" download>Internet of thing (IOT)</a></li>
+                        <li class="list-group-item"><a href="notes/year1_sem2_subject1.pdf" class="note" download>IDT</a></li>
+                        <li class="list-group-item"><a href="subject.html" class="note" download>C Programming</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Semester 2</h3>
+                    <ul class="list-group note-list">
+                        <li class="list-group-item"><a href="subject.html" class="note" download>Mathematics-2</a></li>
+                        <li class="list-group-item"><a href="notes/year1_sem1_subject2.pdf" class="note" download>Chemistry</a></li>
+                        <li class="list-group-item"><a href="subject.html" class="note" download>CAD</a></li>
+                        <li class="list-group-item"><a href="subject.html" class="note" download>Web Programming</a></li>
+                        <li class="list-group-item"><a href="notes/year1_sem2_subject1.pdf" class="note" download>Introduction to Python Programming</a></li>
+                        <li class="list-group-item"><a href="subject.html" class="note" download> Introduction to electronics</a></li>
+                    
+                      
+                    </ul>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Year 2 -->
+        <section id="year2" class="mb-5">
+            <h2 class="text-primary">Year 2</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Semester 3</h3>
+                    <ul class="list-group note-list">
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject2.pdf" class="note" download>Mathematics-3</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject1.pdf" class="note" download>Data Structures</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject2.pdf" class="note" download>Operating Systems</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject1.pdf" class="note" download>Digital Design (DDCO)</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject2.pdf" class="note" download>OOPS with C++</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject2.pdf" class="note" download>OOPS with JAVA</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject2.pdf" class="note" download>DBMS</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject2.pdf" class="note" download>Python for AIML</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject2.pdf" class="note" download>VGIT</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem1_subject2.pdf" class="note" download>Data Visulisation</a></li>
+                     
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Semester 4</h3>
+                    <ul class="list-group note-list">
+                        <li class="list-group-item"><a href="notes/year2_sem2_subject1.pdf" class="note" download>Databases</a></li>
+                        <li class="list-group-item"><a href="notes/year2_sem2_subject2.pdf" class="note" download>Networks</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Similar structure for Year 3 and Year 4 -->
+        <section id="year3" class="mb-5">
+            <h2 class="text-primary">Year 3</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Semester 5</h3>
+                    <ul class="list-group note-list">
+                        <li class="list-group-item"><a href="subject.html" class="note" download>Mathematics-1</a></li>
+                        <li class="list-group-item"><a href="notes/year1_sem1_subject2.pdf" class="note" download>Physics</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Semester 6</h3>
+                    <ul class="list-group note-list">
+                        <li class="list-group-item"><a href="notes/year1_sem2_subject1.pdf" class="note" download>Chemistry</a></li>
+                        <li class="list-group-item"><a href="notes/year1_sem2_subject2.pdf" class="note" download>Programming Basics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+
+
+        <section id="year4" class="mb-5">
+            <h2 class="text-primary">Year 4</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Semester 7</h3>
+                    <ul class="list-group note-list">
+                        <li class="list-group-item"><a href="subject.html" class="note" download>Mathematics-1</a></li>
+                        <li class="list-group-item"><a href="notes/year1_sem1_subject2.pdf" class="note" download>Physics</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Semester 8</h3>
+                    <ul class="list-group note-list">
+                        <li class="list-group-item"><a href="notes/year1_sem2_subject1.pdf" class="note" download>Chemistry</a></li>
+                        <li class="list-group-item"><a href="notes/year1_sem2_subject2.pdf" class="note" download>Programming Basics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Campus Notes Hub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="exp3.js"></script>
+</body>
+</html>
